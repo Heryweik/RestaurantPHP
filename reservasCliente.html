@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de reserva</title>
+    <link rel="stylesheet" href="reservasCliente.css">
+    
+    
+</head>
+
+
+
+
+<body>
+    
+    
+
+    <section class="banner">
+        <h2>RESERVA TU MESA</h2>
+                <div class= "card-container">
+                    <div class ="card-img ">
+                        
+                    </div>
+                
+                <div class="card-contenido">
+                    <h3>Reserva</h3>
+                    <form id="reservar-mesa" action="reservasCliente.php" method="POST">
+                        <div class="form-row">                          
+                            
+                            <input
+                                   placeholder="Fecha"
+                                    class="textbox-n"
+                                        type="text"
+                                        onfocus="(this.type='date')"
+                                        onblur="(this.type='text')"
+                                        name="fecha"
+                                        id="fecha" />
+                            
+                            
+                            
+                            <input
+                                   placeholder="Hora Inicio"
+                                    class="textbox-n"
+                                        type="text"
+                                        onfocus="(this.type='time')"
+                                        onblur="(this.type='text')"
+                                        name="HoraI"
+                                        id="horaI" />
+                            
+
+
+                        </div>
+
+                        <div class="form-row">
+                            <input type="text" placeholder="Nombre completo" id="nombre" name="nombre">
+                            
+                            
+                                                        <input
+                                   placeholder="Hora Finalización"
+                                    class="textbox-n"
+                                        type="text"
+                                        onfocus="(this.type='time')"
+                                        onblur="(this.type='text')"
+                                        name="HoraF"
+                                        id="horaF" />
+
+
+                        </div>
+                        
+                        
+
+                        <div class="form-row">
+                            <input type="number" placeholder="Personas por mesa" id="personas" name="personas" min="1">
+                            <input type="text" placeholder="Numero Mesa" id="mesa" name="mesa">
+
+                        </div>
+                        
+                        <div class="form-row">
+                            <input type="submit" value="RESERVAR MESA">
+                            
+                        </div>
+
+                    </form>
+
+                </div>
+
+             
+
+            </div>
+
+
+
+           
+                
+        
+            </div>
+        
+    </section>
+
+</body>

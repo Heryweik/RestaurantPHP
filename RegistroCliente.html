@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RegistroCliente.css">
+    <title>Registro | Restaurante </title>
+</head>
+
+<body>
+    <section>
+        <div class="contenedor">
+            <div class="formulario">
+                <h2>Registrarse</h2>
+                <form action="registrarCliente.php" method="POST">
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" name="usuario" required>
+                        <label for="#">Nombre de usuario</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="correo" required>
+                        <label for="#">Email</label>
+                    </div>
+
+                    <div class="input-contenedor">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="contrasenia" required>
+                        <label for="#">Contraseña</label>
+                    </div>
+
+                    <div class="recordar">
+                        <label for="#">
+                            <input type="checkbox" name="terminos" required> Acepto los términos y condiciones
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn">Registrarme</button>
+
+                    <div class="registrar">
+                        <p>¿Ya tienes cuenta? <a href="index.php" class="login-link" Ini>Iniciar Sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

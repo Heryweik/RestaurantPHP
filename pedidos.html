@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+	<script src="https://kit.fontawesome.com/a2dd6045c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pedidos.css" />
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="page-nav">
+        <h1>Restaurante</h1>
+        <button id="checkout" class="button-checkout" onclick="showOrder()">Agregar a Carrito</button>
+    </div>
+    <div id="page-content" class="page-content">
+        <div id="all-products" class="all-products">
+            <h1 class="title">Alitas</h1>
+            <div id="product-cards-alitas" class="product-cards"></div>
+			<img src="alitas.jpg" alt="My Test Image" width="100" height="100">
+            <h1 class="title">Boneless</h1>
+            <div id="product-cards-Boneless" class="product-cards"></div>
+			<img src="boneless.jpg" alt="My Test Image" width="100" height="100">
+            <h1 class="title">Hamburguesas</h1>
+            <div id="product-cards-hamburguesas" class="product-cards"></div>
+			<img src="hamburguesa.jpg" alt="My Test Image" width="100" height="100">
+			<h1 class="title">Pizza</h1>
+            <div id="product-cards-pizza" class="product-cards"></div>
+			<img src="pizzza.jpg" alt="My Test Image" width="100" height="100">
+			<h1 class="title">Pasta</h1>
+            <div id="product-cards-pasta" class="product-cards"></div>
+			<img src="pasta.jpg" alt="My Test Image" width="100" height="100">
+        </div>
+        
+
+        <div id="order" class="order">
+            <h1>Orden:</h1>
+            <h2 id="order-total">Total: $150</h2>
+            <table id="order-table" class="order-table">
+                <tr>
+                  <th>Cantidad</th>
+                  <th>Detalle</th>
+                  <th>Subtotal</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Alitas</td>
+                  <td>150</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Boneless</td>
+                  <td>160</td>
+                </tr>
+            </table>
+            <h1>Dirección de envío del pedido:</h1>
+            <div id="order-shipping" class="order-shipping">
+			    <div class="form-group">
+                    <label for="rtn">RTN:</label>
+                    <input type="text" name="rtn" id="rtn">
+                </div>
+                <div class="form-group">
+                    <label for="name">Nombre completo:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="addressLine1">Dirección Linea 1:</label>
+                    <input type="text" name="addressLine1" id="addressLine1">
+                </div>
+                <div class="form-group">
+                    <label for="addressLine2">Dirección Linea 2:</label>
+                    <input type="text" name="addressLine2" id="addressLine2">
+                </div>
+                <div class="form-group">
+                    <label for="city">Ciudad:</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="state">Departamento:</label>
+                    <input type="text" name="state" id="state">
+                </div>
+                <div class="form-group">
+                    <label for="country">País:</label>
+                    <input type="text" name="country" id="country">
+                </div>
+            </div>
+            <div id="order-actions" class="order-actions">
+                <p onclick="displayProducts()"><< volver</p>
+                <p onclick="pay()">confirmar >></p>
+            </div>
+        </div>
+    </div>
+</body>
